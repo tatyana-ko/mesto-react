@@ -127,12 +127,14 @@ function App() {
           <span className="avatar-link-error popup__span popup__form-error"></span>
         </PopupWithForm>
 
-        <PopupWithForm></PopupWithForm>
-
-        <ImagePopup
-          card={selectedCard}
+        <PopupWithForm
           onClose={closeAllPopups}
-        />
+          name="delete-card"
+          title="Вы уверены?"
+          buttonText="Да"
+        ></PopupWithForm>
+
+        <ImagePopup card={selectedCard} onClose={closeAllPopups} />
       </div>
     </div>
   );
