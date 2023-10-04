@@ -22,7 +22,6 @@ export default function PopupWithForm({
           onSubmit={onSubmit}
           className={`popup__form popup__form_${name}`}
           name={`${name}_form`}
-          noValidate
         >
           {children}
           <button className="popup__button-save button-hover" type="submit">
